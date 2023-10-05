@@ -104,7 +104,8 @@
                     "type": "cursor",
                     "cursor": {
                         "collisionGroup": 0,
-                        "handedness": "none"
+                        "handedness": "input component",
+                        "rayCastMode": "collision"
                     }
                 },
                 {
@@ -813,7 +814,8 @@
                         "indicatorYOffset": 0.0099999,
                         "eyeLeft": "18",
                         "eyeRight": "19"
-                    }
+                    },
+                    "active": false
                 }
             ],
             "translation": [
@@ -1769,7 +1771,8 @@
                         "indicatorYOffset": 0.0099999,
                         "eyeLeft": "18",
                         "eyeRight": "19"
-                    }
+                    },
+                    "active": false
                 }
             ],
             "translation": [
@@ -1880,6 +1883,58 @@
                     "active": false
                 }
             ]
+        },
+        "260": {
+            "name": "Cube",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "22"
+                    }
+                },
+                {
+                    "type": "test",
+                    "test": {
+                        "player1Material": "261",
+                        "player2Material": "262"
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                0.5,
+                                0.5,
+                                0.5
+                            ]
+                        }
+                    }
+                }
+            ],
+            "translation": [
+                -2.9697046,
+                0.4999999,
+                1.8714016
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                0.5,
+                0.5,
+                0.5
+            ],
+            "parent": null
         }
     },
     "meshes": {
@@ -2314,6 +2369,55 @@
                     1.0
                 ]
             }
+        },
+        "261": {
+            "name": "player1",
+            "Phong": {
+                "diffuseColor": [
+                    0.0,
+                    1.0,
+                    0.2869954,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999899930335232e-7,
+                    9.999911299019004e-7,
+                    9.999999974752427e-7,
+                    1.0
+                ],
+                "shininess": 10,
+                "ambientColor": [
+                    0.0,
+                    0.317647,
+                    0.0826166,
+                    1.0
+                ]
+            },
+            "pipeline": "37"
+        },
+        "262": {
+            "name": "player2",
+            "Phong": {
+                "diffuseColor": [
+                    0.9098039,
+                    0.0,
+                    0.5411764,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999899930335232e-7,
+                    9.999911299019004e-7,
+                    9.999999974752427e-7,
+                    1.0
+                ],
+                "shininess": 10,
+                "ambientColor": [
+                    0.317647,
+                    0.0,
+                    0.2165777,
+                    1.0
+                ]
+            }
         }
     },
     "shaders": {
@@ -2551,7 +2655,7 @@
             ]
         },
         "runtime": {
-            "visualizeColliders": false,
+            "visualizeColliders": true,
             "webxr": {
                 "optionalFeatures": {
                     "local-floor": true

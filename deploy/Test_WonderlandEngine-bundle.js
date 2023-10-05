@@ -14994,6 +14994,31 @@ __publicField(ButtonComponent, "Properties", {
   hoverMaterial: Property.material()
 });
 
+// E:/git_CHOIJiho/Test_WonderlandEngine/js/test.js
+var Test = class extends Component {
+  meshComponent;
+  init() {
+    console.log("init() with param", this.param);
+  }
+  start() {
+    this.cursorTarget = this.object.getComponent("cursor-target");
+    this.cursorTarget.addClickFunction(this.onClick.bind(this));
+    this.meshComponent = this.object.getComponent(MeshComponent);
+  }
+  update(dt) {
+  }
+  onClick() {
+    console.log("Hello " + this.object.name);
+    this.meshComponent.material = this.player1Material;
+  }
+};
+__publicField(Test, "TypeName", "test");
+/* Properties that are configurable in the editor */
+__publicField(Test, "Properties", {
+  player1Material: Property.material(),
+  player2Material: Property.material()
+});
+
 // E:/git_CHOIJiho/Test_WonderlandEngine/js/index.js
 var RuntimeOptions = {
   physx: false,
@@ -15045,6 +15070,7 @@ engine.registerComponent(PlayerHeight);
 engine.registerComponent(TeleportComponent);
 engine.registerComponent(VrModeActiveSwitch);
 engine.registerComponent(ButtonComponent);
+engine.registerComponent(Test);
 engine.scene.load(`${Constants.ProjectName}.bin`).catch((e) => {
   console.error(e);
   window.alert(`Failed to load ${Constants.ProjectName}.bin:`, e);
