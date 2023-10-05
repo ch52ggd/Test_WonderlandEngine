@@ -14997,6 +14997,7 @@ __publicField(ButtonComponent, "Properties", {
 // E:/git_CHOIJiho/Test_WonderlandEngine/js/test.js
 var Test = class extends Component {
   meshComponent;
+  //count = 0;
   init() {
     console.log("init() with param", this.param);
   }
@@ -15007,16 +15008,32 @@ var Test = class extends Component {
   }
   update(dt) {
   }
-  onClick() {
-    console.log("Hello " + this.object.name);
-    this.meshComponent.material = this.player1Material;
+  /*
+  onClick(){
+      console.log("Hello "+ this.object.name);
+      this.meshComponent.material = this.player1Material;
   }
+  */
+  /*
+      onClick(){
+          this.count += 1;
+          console.log(this.count);
+  
+          if(this.count%2 == 0){
+              this.meshComponent.material = this.player2Material;
+          }
+          else{
+              this.meshComponent.material = this.player1Material;
+          }
+      }
+      */
 };
 __publicField(Test, "TypeName", "test");
 /* Properties that are configurable in the editor */
 __publicField(Test, "Properties", {
   player1Material: Property.material(),
   player2Material: Property.material()
+  //count: Property.int(0)
 });
 
 // E:/git_CHOIJiho/Test_WonderlandEngine/js/index.js
