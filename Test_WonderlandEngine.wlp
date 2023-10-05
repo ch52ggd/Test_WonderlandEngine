@@ -62,34 +62,6 @@
                 4.0
             ]
         },
-        "16": {
-            "name": "Cube",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "8",
-                        "material": "22"
-                    }
-                }
-            ],
-            "translation": [
-                2.9802322387695313e-8,
-                0.4999999,
-                5.960464477539065e-8
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scaling": [
-                0.5,
-                0.5,
-                0.5
-            ]
-        },
         "17": {
             "name": "NonVrCamera",
             "parent": "205",
@@ -119,7 +91,7 @@
                 }
             ],
             "translation": [
-                0.0,
+                2.5,
                 0.0,
                 0.0
             ],
@@ -249,62 +221,6 @@
                 1.0,
                 1.0,
                 1.0
-            ]
-        },
-        "24": {
-            "name": "Cone",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "10",
-                        "material": "25"
-                    }
-                }
-            ],
-            "translation": [
-                1.5,
-                1.0,
-                -1.4901161193847656e-8
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scaling": [
-                1.0,
-                1.0,
-                1.0
-            ]
-        },
-        "27": {
-            "name": "Sphere",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "9",
-                        "material": "26"
-                    }
-                }
-            ],
-            "translation": [
-                0.4999999,
-                0.75,
-                -1.25
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scaling": [
-                0.75,
-                0.75,
-                0.75
             ]
         },
         "53": {
@@ -1891,7 +1807,7 @@
                     "type": "mesh",
                     "mesh": {
                         "mesh": "8",
-                        "material": "22"
+                        "material": "20"
                     }
                 },
                 {
@@ -1912,16 +1828,16 @@
                             "extents": [
                                 0.5,
                                 0.5,
-                                0.5
+                                0.1
                             ]
                         }
                     }
                 }
             ],
             "translation": [
-                1.5,
-                0.4999999,
-                2.0
+                1.1920928955078125e-7,
+                5.0,
+                -5.0
             ],
             "rotation": [
                 0.0,
@@ -1932,8 +1848,428 @@
             "scaling": [
                 0.5,
                 0.5,
-                0.5
+                0.1
             ],
+            "parent": null
+        },
+        "263": {
+            "name": "Cube",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "20"
+                    }
+                },
+                {
+                    "type": "test",
+                    "test": {
+                        "player1Material": "261",
+                        "player2Material": "262"
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                0.5,
+                                0.5,
+                                0.1
+                            ]
+                        }
+                    }
+                }
+            ],
+            "translation": [
+                -1.5,
+                2.0,
+                -4.9999995
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                0.5,
+                0.5,
+                0.1
+            ],
+            "parent": null
+        },
+        "264": {
+            "name": "Cube",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "20"
+                    }
+                },
+                {
+                    "type": "test",
+                    "test": {
+                        "player1Material": "261",
+                        "player2Material": "262"
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                0.5,
+                                0.5,
+                                0.1
+                            ]
+                        }
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                2.0,
+                -4.9999995
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                0.5,
+                0.5,
+                0.1
+            ],
+            "parent": null
+        },
+        "265": {
+            "name": "Cube",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "20"
+                    }
+                },
+                {
+                    "type": "test",
+                    "test": {
+                        "player1Material": "261",
+                        "player2Material": "262"
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                0.5,
+                                0.5,
+                                0.1
+                            ]
+                        }
+                    }
+                }
+            ],
+            "translation": [
+                1.5,
+                2.0,
+                -4.9999995
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                0.5,
+                0.5,
+                0.1
+            ],
+            "parent": null
+        },
+        "266": {
+            "name": "Cube",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "20"
+                    }
+                },
+                {
+                    "type": "test",
+                    "test": {
+                        "player1Material": "261",
+                        "player2Material": "262"
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                0.5,
+                                0.5,
+                                0.1
+                            ]
+                        }
+                    }
+                }
+            ],
+            "translation": [
+                -1.5,
+                5.0,
+                -5.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                0.5,
+                0.5,
+                0.1
+            ],
+            "parent": null
+        },
+        "267": {
+            "name": "Cube",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "20"
+                    }
+                },
+                {
+                    "type": "test",
+                    "test": {
+                        "player1Material": "261",
+                        "player2Material": "262"
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                0.5,
+                                0.5,
+                                0.1
+                            ]
+                        }
+                    }
+                }
+            ],
+            "translation": [
+                1.5,
+                5.0,
+                -5.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                0.5,
+                0.5,
+                0.1
+            ],
+            "parent": null
+        },
+        "268": {
+            "name": "Cube",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "20"
+                    }
+                },
+                {
+                    "type": "test",
+                    "test": {
+                        "player1Material": "261",
+                        "player2Material": "262"
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                0.5,
+                                0.5,
+                                0.1
+                            ]
+                        }
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                3.5,
+                -5.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                0.5,
+                0.5,
+                0.1
+            ],
+            "parent": null
+        },
+        "269": {
+            "name": "Cube",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "20"
+                    }
+                },
+                {
+                    "type": "test",
+                    "test": {
+                        "player1Material": "261",
+                        "player2Material": "262"
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                0.5,
+                                0.5,
+                                0.1
+                            ]
+                        }
+                    }
+                }
+            ],
+            "translation": [
+                -1.5,
+                3.5,
+                -5.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                0.5,
+                0.5,
+                0.1
+            ],
+            "parent": null
+        },
+        "270": {
+            "name": "Cube",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "20"
+                    }
+                },
+                {
+                    "type": "test",
+                    "test": {
+                        "player1Material": "261",
+                        "player2Material": "262"
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                0.5,
+                                0.5,
+                                0.1
+                            ]
+                        }
+                    }
+                }
+            ],
+            "translation": [
+                1.5,
+                3.5,
+                -5.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                0.5,
+                0.5,
+                0.1
+            ],
+            "parent": null
+        },
+        "272": {
+            "name": "Empty",
             "parent": null
         }
     },

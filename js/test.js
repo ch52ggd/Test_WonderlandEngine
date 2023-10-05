@@ -37,7 +37,7 @@ export class Test extends Component {
         console.log("Hello "+ this.object.name);
         this.meshComponent.material = this.player1Material;
     }
-    */
+    */    
 
     /*
     onClick(){

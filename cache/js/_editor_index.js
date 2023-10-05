@@ -4,3 +4,5 @@ import * as _E__git_CHOIJiho_Test_WonderlandEngine_js_button_js from 'E:/git_CHO
 _registerEditor(_E__git_CHOIJiho_Test_WonderlandEngine_js_button_js);
 import * as _E__git_CHOIJiho_Test_WonderlandEngine_js_test_js from 'E:/git_CHOIJiho/Test_WonderlandEngine/js/test.js';
 _registerEditor(_E__git_CHOIJiho_Test_WonderlandEngine_js_test_js);
+import * as _E__git_CHOIJiho_Test_WonderlandEngine_js_testManager_js from 'E:/git_CHOIJiho/Test_WonderlandEngine/js/testManager.js';
+_registerEditor(_E__git_CHOIJiho_Test_WonderlandEngine_js_testManager_js);
