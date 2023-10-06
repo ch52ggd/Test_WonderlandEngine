@@ -1,4 +1,4 @@
-import {Component, Property, Material, MeshComponent, Type} from '@wonderlandengine/api';
+import {Component, Property, Material, MeshComponent} from '@wonderlandengine/api';
 
 import {TestManager} from './testManager.js';
 
@@ -28,9 +28,8 @@ export class Test extends Component {
         this.cursorTarget.addClickFunction(this.onClick.bind(this));
 
         this.meshComponent = this.object.getComponent(MeshComponent);
-        this.gameManager = this.gameManager.getComponent(TestManager);
 
-        //this.count = 0;
+        this.gameManager = this.gameManager.getComponent(TestManager);
     }
 
     update(dt) {
@@ -38,26 +37,24 @@ export class Test extends Component {
         
     }
 
-    
     onClick(){
-        console.log("Hello "+ this.object.name);
-        this.meshComponent.material = this.player1Material;
+        //console.log("Hello "+ this.object.name);
 
-
-    }
-        
-
-    /*
-    onClick(){
-        this.count += 1;
-        console.log(this.count);
-
-        if(this.count%2 == 0){
-            this.meshComponent.material = this.player2Material;
+        //click ignore
+        if(this.meshComponent.material.equals(this.player1Material) || this.meshComponent.material.equals(this.player2Material)){
+            console.log("click ignore");
+            return;
         }
         else{
-            this.meshComponent.material = this.player1Material;
+            if(this.gameManager.isPlayer1 === true){
+                this.meshComponent.material = this.player1Material;
+            }
+            else{
+                this.meshComponent.material = this.player2Material;
+            }
         }
+
+        //Tell the server, that this block was clicked.
+        this.gameManager.blockWasClicked();
     }
-    */
 }

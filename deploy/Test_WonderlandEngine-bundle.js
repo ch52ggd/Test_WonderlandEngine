@@ -15023,6 +15023,11 @@ var TestManager = class extends Component {
   //Checking board is full
   isBoardFull() {
   }
+  //turn player
+  blockWasClicked() {
+    this.isPlayer1 = !this.isPlayer1;
+    console.log(this.isPlayer1);
+  }
 };
 __publicField(TestManager, "TypeName", "testManager");
 /* Properties that are configurable in the editor */
@@ -15045,22 +15050,18 @@ var Test = class extends Component {
   update(dt) {
   }
   onClick() {
-    console.log("Hello " + this.object.name);
-    this.meshComponent.material = this.player1Material;
-  }
-  /*
-      onClick(){
-          this.count += 1;
-          console.log(this.count);
-  
-          if(this.count%2 == 0){
-              this.meshComponent.material = this.player2Material;
-          }
-          else{
-              this.meshComponent.material = this.player1Material;
-          }
+    if (this.meshComponent.material.equals(this.player1Material) || this.meshComponent.material.equals(this.player2Material)) {
+      console.log("click ignore");
+      return;
+    } else {
+      if (this.gameManager.isPlayer1 === true) {
+        this.meshComponent.material = this.player1Material;
+      } else {
+        this.meshComponent.material = this.player2Material;
       }
-      */
+    }
+    this.gameManager.blockWasClicked();
+  }
 };
 __publicField(Test, "TypeName", "test");
 /* Properties that are configurable in the editor */

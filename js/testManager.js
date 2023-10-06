@@ -50,4 +50,11 @@ export class TestManager extends Component {
     isBoardFull(){
 
     }
+
+    //turn player
+    blockWasClicked()
+    {
+        this.isPlayer1 = !this.isPlayer1;
+        console.log(this.isPlayer1);
+    }
 }
