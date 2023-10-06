@@ -17,6 +17,8 @@ export class Test extends Component {
     meshComponent;
     gameManager;
 
+
+    
     init() {
         //console.log('init() with param', this.param);
     }

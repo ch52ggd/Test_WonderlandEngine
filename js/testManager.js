@@ -1,4 +1,4 @@
-import {Component, Property} from '@wonderlandengine/api';
+import {Component, Property, MeshComponent} from '@wonderlandengine/api';
 
 /**
  * testManager
@@ -9,7 +9,6 @@ export class TestManager extends Component {
     static Properties = {
         //param: Property.float(1.0)
         
-        
     };
 
     isPlayer1 = true;
@@ -19,7 +18,6 @@ export class TestManager extends Component {
         0, 0, 0,
         0, 0, 0
     ];
-    
 
 
     static onRegister(engine) {
@@ -55,6 +53,5 @@ export class TestManager extends Component {
     blockWasClicked()
     {
         this.isPlayer1 = !this.isPlayer1;
-        console.log(this.isPlayer1);
     }
 }

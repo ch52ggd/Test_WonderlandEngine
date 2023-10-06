@@ -15026,7 +15026,6 @@ var TestManager = class extends Component {
   //turn player
   blockWasClicked() {
     this.isPlayer1 = !this.isPlayer1;
-    console.log(this.isPlayer1);
   }
 };
 __publicField(TestManager, "TypeName", "testManager");

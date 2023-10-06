@@ -2291,13 +2291,20 @@
             "parent": null,
             "components": [
                 {
-                    "type": "testManager"
+                    "type": "testManager",
+                    "testManager": {
+                        "block0": "260",
+                        "block1": "263",
+                        "block2": "264",
+                        "block3": "265",
+                        "block4": "266",
+                        "block5": "267",
+                        "block6": "268",
+                        "block7": "269",
+                        "block8": "270"
+                    }
                 }
             ]
-        },
-        "274": {
-            "name": "Empty",
-            "parent": null
         }
     },
     "meshes": {
