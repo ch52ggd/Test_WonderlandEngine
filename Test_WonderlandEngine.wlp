@@ -1801,7 +1801,7 @@
             ]
         },
         "260": {
-            "name": "Cube",
+            "name": "Cube (0)",
             "components": [
                 {
                     "type": "mesh",
@@ -1814,8 +1814,10 @@
                     "type": "test",
                     "test": {
                         "player1Material": "261",
-                        "player2Material": "262"
-                    }
+                        "player2Material": "262",
+                        "gameManager": "272"
+                    },
+                    "active": true
                 },
                 {
                     "type": "cursor-target"
@@ -1835,8 +1837,8 @@
                 }
             ],
             "translation": [
-                1.1920928955078125e-7,
-                5.0,
+                -1.5,
+                4.5,
                 -5.0
             ],
             "rotation": [
@@ -1853,7 +1855,7 @@
             "parent": null
         },
         "263": {
-            "name": "Cube",
+            "name": "Cube (1)",
             "components": [
                 {
                     "type": "mesh",
@@ -1866,8 +1868,10 @@
                     "type": "test",
                     "test": {
                         "player1Material": "261",
-                        "player2Material": "262"
-                    }
+                        "player2Material": "262",
+                        "gameManager": "272"
+                    },
+                    "active": true
                 },
                 {
                     "type": "cursor-target"
@@ -1887,8 +1891,8 @@
                 }
             ],
             "translation": [
-                -1.5,
-                2.0,
+                0.0,
+                4.5,
                 -4.9999995
             ],
             "rotation": [
@@ -1905,7 +1909,7 @@
             "parent": null
         },
         "264": {
-            "name": "Cube",
+            "name": "Cube (2)",
             "components": [
                 {
                     "type": "mesh",
@@ -1918,8 +1922,10 @@
                     "type": "test",
                     "test": {
                         "player1Material": "261",
-                        "player2Material": "262"
-                    }
+                        "player2Material": "262",
+                        "gameManager": "272"
+                    },
+                    "active": true
                 },
                 {
                     "type": "cursor-target"
@@ -1939,8 +1945,8 @@
                 }
             ],
             "translation": [
-                0.0,
-                2.0,
+                1.5,
+                4.5,
                 -4.9999995
             ],
             "rotation": [
@@ -1957,7 +1963,7 @@
             "parent": null
         },
         "265": {
-            "name": "Cube",
+            "name": "Cube (3)",
             "components": [
                 {
                     "type": "mesh",
@@ -1970,8 +1976,10 @@
                     "type": "test",
                     "test": {
                         "player1Material": "261",
-                        "player2Material": "262"
-                    }
+                        "player2Material": "262",
+                        "gameManager": "272"
+                    },
+                    "active": true
                 },
                 {
                     "type": "cursor-target"
@@ -1991,8 +1999,8 @@
                 }
             ],
             "translation": [
-                1.5,
-                2.0,
+                -1.5,
+                3.0,
                 -4.9999995
             ],
             "rotation": [
@@ -2009,7 +2017,7 @@
             "parent": null
         },
         "266": {
-            "name": "Cube",
+            "name": "Cube (4)",
             "components": [
                 {
                     "type": "mesh",
@@ -2022,8 +2030,10 @@
                     "type": "test",
                     "test": {
                         "player1Material": "261",
-                        "player2Material": "262"
-                    }
+                        "player2Material": "262",
+                        "gameManager": "272"
+                    },
+                    "active": true
                 },
                 {
                     "type": "cursor-target"
@@ -2043,8 +2053,8 @@
                 }
             ],
             "translation": [
-                -1.5,
-                5.0,
+                0.0,
+                3.0,
                 -5.0
             ],
             "rotation": [
@@ -2061,7 +2071,7 @@
             "parent": null
         },
         "267": {
-            "name": "Cube",
+            "name": "Cube (5)",
             "components": [
                 {
                     "type": "mesh",
@@ -2074,8 +2084,10 @@
                     "type": "test",
                     "test": {
                         "player1Material": "261",
-                        "player2Material": "262"
-                    }
+                        "player2Material": "262",
+                        "gameManager": "272"
+                    },
+                    "active": true
                 },
                 {
                     "type": "cursor-target"
@@ -2096,7 +2108,7 @@
             ],
             "translation": [
                 1.5,
-                5.0,
+                3.0,
                 -5.0
             ],
             "rotation": [
@@ -2113,7 +2125,7 @@
             "parent": null
         },
         "268": {
-            "name": "Cube",
+            "name": "Cube (6)",
             "components": [
                 {
                     "type": "mesh",
@@ -2126,60 +2138,10 @@
                     "type": "test",
                     "test": {
                         "player1Material": "261",
-                        "player2Material": "262"
-                    }
-                },
-                {
-                    "type": "cursor-target"
-                },
-                {
-                    "type": "collision",
-                    "collision": {
-                        "collider": "aabb",
-                        "aabb": {
-                            "extents": [
-                                0.5,
-                                0.5,
-                                0.1
-                            ]
-                        }
-                    }
-                }
-            ],
-            "translation": [
-                0.0,
-                3.5,
-                -5.0
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scaling": [
-                0.5,
-                0.5,
-                0.1
-            ],
-            "parent": null
-        },
-        "269": {
-            "name": "Cube",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "8",
-                        "material": "20"
-                    }
-                },
-                {
-                    "type": "test",
-                    "test": {
-                        "player1Material": "261",
-                        "player2Material": "262"
-                    }
+                        "player2Material": "262",
+                        "gameManager": "272"
+                    },
+                    "active": true
                 },
                 {
                     "type": "cursor-target"
@@ -2200,7 +2162,61 @@
             ],
             "translation": [
                 -1.5,
-                3.5,
+                1.5,
+                -5.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                0.5,
+                0.5,
+                0.1
+            ],
+            "parent": null
+        },
+        "269": {
+            "name": "Cube (7)",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "20"
+                    }
+                },
+                {
+                    "type": "test",
+                    "test": {
+                        "player1Material": "261",
+                        "player2Material": "262",
+                        "gameManager": "272"
+                    },
+                    "active": true
+                },
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                0.5,
+                                0.5,
+                                0.1
+                            ]
+                        }
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                1.5,
                 -5.0
             ],
             "rotation": [
@@ -2217,7 +2233,7 @@
             "parent": null
         },
         "270": {
-            "name": "Cube",
+            "name": "Cube (8)",
             "components": [
                 {
                     "type": "mesh",
@@ -2230,8 +2246,10 @@
                     "type": "test",
                     "test": {
                         "player1Material": "261",
-                        "player2Material": "262"
-                    }
+                        "player2Material": "262",
+                        "gameManager": "272"
+                    },
+                    "active": true
                 },
                 {
                     "type": "cursor-target"
@@ -2252,7 +2270,7 @@
             ],
             "translation": [
                 1.5,
-                3.5,
+                1.5,
                 -5.0
             ],
             "rotation": [
@@ -2269,6 +2287,15 @@
             "parent": null
         },
         "272": {
+            "name": "gameManager",
+            "parent": null,
+            "components": [
+                {
+                    "type": "testManager"
+                }
+            ]
+        },
+        "274": {
             "name": "Empty",
             "parent": null
         }

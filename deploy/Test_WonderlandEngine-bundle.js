@@ -14994,26 +14994,60 @@ __publicField(ButtonComponent, "Properties", {
   hoverMaterial: Property.material()
 });
 
+// E:/git_CHOIJiho/Test_WonderlandEngine/js/testManager.js
+var TestManager = class extends Component {
+  isPlayer1 = true;
+  gameBoard = [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ];
+  static onRegister(engine2) {
+  }
+  init() {
+    console.log("init() with param", this.param);
+  }
+  start() {
+  }
+  update(dt) {
+  }
+  //Checking who is winner
+  isWin() {
+  }
+  //Checking board is full
+  isBoardFull() {
+  }
+};
+__publicField(TestManager, "TypeName", "testManager");
+/* Properties that are configurable in the editor */
+__publicField(TestManager, "Properties", {
+  //param: Property.float(1.0)
+});
+
 // E:/git_CHOIJiho/Test_WonderlandEngine/js/test.js
 var Test = class extends Component {
   meshComponent;
-  //count = 0;
+  gameManager;
   init() {
-    console.log("init() with param", this.param);
   }
   start() {
     this.cursorTarget = this.object.getComponent("cursor-target");
     this.cursorTarget.addClickFunction(this.onClick.bind(this));
     this.meshComponent = this.object.getComponent(MeshComponent);
+    this.gameManager = this.gameManager.getComponent(TestManager);
   }
   update(dt) {
   }
-  /*
-  onClick(){
-      console.log("Hello "+ this.object.name);
-      this.meshComponent.material = this.player1Material;
+  onClick() {
+    console.log("Hello " + this.object.name);
+    this.meshComponent.material = this.player1Material;
   }
-  */
   /*
       onClick(){
           this.count += 1;
@@ -15032,8 +15066,8 @@ __publicField(Test, "TypeName", "test");
 /* Properties that are configurable in the editor */
 __publicField(Test, "Properties", {
   player1Material: Property.material(),
-  player2Material: Property.material()
-  //count: Property.int(0)
+  player2Material: Property.material(),
+  gameManager: Property.object()
 });
 
 // E:/git_CHOIJiho/Test_WonderlandEngine/js/index.js
@@ -15088,6 +15122,7 @@ engine.registerComponent(TeleportComponent);
 engine.registerComponent(VrModeActiveSwitch);
 engine.registerComponent(ButtonComponent);
 engine.registerComponent(Test);
+engine.registerComponent(TestManager);
 engine.scene.load(`${Constants.ProjectName}.bin`).catch((e) => {
   console.error(e);
   window.alert(`Failed to load ${Constants.ProjectName}.bin:`, e);

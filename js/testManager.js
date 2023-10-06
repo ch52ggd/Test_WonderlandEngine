@@ -7,8 +7,20 @@ export class TestManager extends Component {
     static TypeName = 'testManager';
     /* Properties that are configurable in the editor */
     static Properties = {
-        param: Property.float(1.0)
+        //param: Property.float(1.0)
+        
+        
     };
+
+    isPlayer1 = true;
+
+    gameBoard = [
+        0, 0, 0,
+        0, 0, 0,
+        0, 0, 0
+    ];
+    
+
 
     static onRegister(engine) {
         /* Triggered when this component class is registered.
@@ -21,10 +33,21 @@ export class TestManager extends Component {
     }
 
     start() {
-        console.log('start() with param', this.param);
+        //console.log('start() with param', this.param);
     }
 
     update(dt) {
         /* Called every frame. */
+    }
+
+
+    //Checking who is winner
+    isWin(){
+
+    }
+
+    //Checking board is full
+    isBoardFull(){
+
     }
 }

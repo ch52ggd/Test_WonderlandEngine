@@ -1,4 +1,6 @@
-import {Component, Property, Material, MeshComponent} from '@wonderlandengine/api';
+import {Component, Property, Material, MeshComponent, Type} from '@wonderlandengine/api';
+
+import {TestManager} from './testManager.js';
 
 /**
  * test
@@ -9,35 +11,41 @@ export class Test extends Component {
     static Properties = {
         player1Material: Property.material(),
         player2Material: Property.material(),
-        //count: Property.int(0)
+        gameManager: Property.object()
     };
 
     meshComponent;
-
-    //count = 0;
+    gameManager;
 
     init() {
-        console.log('init() with param', this.param);
+        //console.log('init() with param', this.param);
     }
 
     start() {
         //console.log('start() with param', this.param);
+
         this.cursorTarget = this.object.getComponent('cursor-target');
         this.cursorTarget.addClickFunction(this.onClick.bind(this));
 
         this.meshComponent = this.object.getComponent(MeshComponent);
+        this.gameManager = this.gameManager.getComponent(TestManager);
+
+        //this.count = 0;
     }
 
     update(dt) {
         /* Called every frame. */
+        
     }
 
-    /*
+    
     onClick(){
         console.log("Hello "+ this.object.name);
         this.meshComponent.material = this.player1Material;
+
+
     }
-    */    
+        
 
     /*
     onClick(){
