@@ -17,7 +17,7 @@ export class Test extends Component {
     meshComponent;
     gameManager;
 
-
+    player = '0';
     
     init() {
         //console.log('init() with param', this.param);
@@ -50,9 +50,11 @@ export class Test extends Component {
         else{
             if(this.gameManager.isPlayer1 === true){
                 this.meshComponent.material = this.player1Material;
+                this.player = '1';
             }
             else{
                 this.meshComponent.material = this.player2Material;
+                this.player = '2';
             }
         }
 
