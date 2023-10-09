@@ -14997,13 +14997,15 @@ __publicField(ButtonComponent, "Properties", {
 // E:/git/Test_WonderlandEngine/js/testManager.js
 var TestManager = class extends Component {
   isPlayer1 = true;
-  isWinning = false;
+  isEnd = false;
   static onRegister(engine2) {
   }
   init() {
     console.log("init() with param", this.param);
   }
   start() {
+    this.textBox = this.object.getComponent("text");
+    this.textBox.text = " ";
     this.b0 = this.block0.getComponent("test");
     this.b1 = this.block1.getComponent("test");
     this.b2 = this.block2.getComponent("test");
@@ -15021,39 +15023,36 @@ var TestManager = class extends Component {
   }
   update(dt) {
     this.isWin();
-    this.isBoardFull();
   }
   //Checking who is winner
   isWin() {
     for (var i = 0; i < 3; i++) {
-      if (this.blockArray[i][0].player !== "0") {
-        if (this.blockArray[i][0].player === "1" && this.blockArray[i][1].player === "1" && this.blockArray[i][2].player === "1") {
-          this.isWinning = true;
-          console.log("Player1 is winner");
+      if (this.blockArray[i][0].player !== "0" && this.blockArray[i][0].player === this.blockArray[i][1].player && this.blockArray[i][1].player === this.blockArray[i][2].player) {
+        this.isEnd = true;
+        if (this.blockArray[i][i].player === "1") {
+          this.textBox.text = "Player1 is winner";
         }
-        if (this.blockArray[i][0].player === "2" && this.blockArray[i][1].player === "2" && this.blockArray[i][2].player === "2") {
-          this.isWinning = true;
-          console.log("Player2 is winner");
+        if (this.blockArray[i][i].player === "2") {
+          this.textBox.text = "Player2 is winner";
         }
       }
-      if (this.blockArray[0][i].player !== "0") {
-        if (this.blockArray[0][i].player === "1" && this.blockArray[1][i].player === "1" && this.blockArray[2][i].player === "1") {
-          this.isWinning = true;
-          console.log("Player1 is winner");
+      if (this.blockArray[0][i].player !== "0" && this.blockArray[0][i].player === this.blockArray[1][i].player && this.blockArray[1][i].player === this.blockArray[2][i].player) {
+        this.isEnd = true;
+        if (this.blockArray[i][i].player === "1") {
+          this.textBox.text = "Player1 is winner";
         }
-        if (this.blockArray[0][i].player === "2" && this.blockArray[1][i].player === "2" && this.blockArray[2][i].player === "2") {
-          this.isWinning = true;
-          console.log("Player2 is winner");
+        if (this.blockArray[i][i].player === "2") {
+          this.textBox.text = "Player2 is winner";
         }
       }
     }
   }
   //Checking board is full
   isBoardFull() {
-    if (this.isWinning === false) {
-      if (this.blockArray[0][0].player !== "0" && this.blockArray[0][1].player !== "0" && this.blockArray[0][2].player !== "0" && this.blockArray[1][0].player !== "0" && this.blockArray[1][1].player !== "0" && this.blockArray[1][2].player !== "0" && this.blockArray[2][0].player !== "0" && this.blockArray[2][1].player !== "0" && this.blockArray[2][2].player !== "0") {
-        console.log("Board is full");
-      }
+    if (this.blockArray[0][0].player !== "0" && this.blockArray[0][1].player !== "0" && this.blockArray[0][2].player !== "0" && this.blockArray[1][0].player !== "0" && this.blockArray[1][1].player !== "0" && this.blockArray[1][2].player !== "0" && this.blockArray[2][0].player !== "0" && this.blockArray[2][1].player !== "0" && this.blockArray[2][2].player !== "0") {
+      this.isEnd = true;
+      this.textBox.text = "Board is full";
+      console.log("Board is full");
     }
   }
   //turn player
@@ -15095,6 +15094,8 @@ var Test = class extends Component {
     if (this.meshComponent.material.equals(this.player1Material) || this.meshComponent.material.equals(this.player2Material)) {
       console.log("click ignore");
       return;
+    } else if (this.gameManager.isEnd === true) {
+      console.log("click ignore");
     } else {
       if (this.gameManager.isPlayer1 === true) {
         this.meshComponent.material = this.player1Material;

@@ -47,6 +47,9 @@ export class Test extends Component {
             console.log("click ignore");
             return;
         }
+        else if(this.gameManager.isEnd === true){
+            console.log("click ignore");
+        }
         else{
             if(this.gameManager.isPlayer1 === true){
                 this.meshComponent.material = this.player1Material;
