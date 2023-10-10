@@ -1,14 +1,15 @@
 import {Component, Property, Material, MeshComponent} from '@wonderlandengine/api';
 
-import {TestManager} from './testManager.js';
+import {GameManager} from './gameManager.js';
 
 /**
- * test
+ * block
  */
-export class Test extends Component {
-    static TypeName = 'test';
+export class Block extends Component {
+    static TypeName = 'block';
     /* Properties that are configurable in the editor */
     static Properties = {
+
         player1Material: Property.material(),
         player2Material: Property.material(),
         gameManager: Property.object()
@@ -18,7 +19,7 @@ export class Test extends Component {
     gameManager;
 
     player = '0';
-    
+
     init() {
         //console.log('init() with param', this.param);
     }
@@ -31,12 +32,11 @@ export class Test extends Component {
 
         this.meshComponent = this.object.getComponent(MeshComponent);
 
-        this.gameManager = this.gameManager.getComponent(TestManager);
+        this.gameManager = this.gameManager.getComponent(GameManager);
     }
 
     update(dt) {
         /* Called every frame. */
-        
     }
 
     onClick(){

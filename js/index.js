@@ -21,9 +21,10 @@ import {MouseLookComponent} from '@wonderlandengine/components';
 import {PlayerHeight} from '@wonderlandengine/components';
 import {TeleportComponent} from '@wonderlandengine/components';
 import {VrModeActiveSwitch} from '@wonderlandengine/components';
+import {Block} from './block.js';
 import {ButtonComponent} from './button.js';
-import {Test} from './test.js';
-import {TestManager} from './testManager.js';
+import {GameManager} from './gameManager.js';
+import {TextManager} from './textManager.js';
 /* wle:auto-imports:end */
 
 import {loadRuntime} from '@wonderlandengine/api';
@@ -91,9 +92,10 @@ engine.registerComponent(MouseLookComponent);
 engine.registerComponent(PlayerHeight);
 engine.registerComponent(TeleportComponent);
 engine.registerComponent(VrModeActiveSwitch);
+engine.registerComponent(Block);
 engine.registerComponent(ButtonComponent);
-engine.registerComponent(Test);
-engine.registerComponent(TestManager);
+engine.registerComponent(GameManager);
+engine.registerComponent(TextManager);
 /* wle:auto-register:end */
 
 engine.scene.load(`${Constants.ProjectName}.bin`).catch((e) => {

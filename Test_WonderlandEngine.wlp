@@ -1811,15 +1811,6 @@
                     }
                 },
                 {
-                    "type": "test",
-                    "test": {
-                        "player1Material": "261",
-                        "player2Material": "262",
-                        "gameManager": "272"
-                    },
-                    "active": true
-                },
-                {
                     "type": "cursor-target"
                 },
                 {
@@ -1833,6 +1824,14 @@
                                 0.1
                             ]
                         }
+                    }
+                },
+                {
+                    "type": "block",
+                    "block": {
+                        "player1Material": "261",
+                        "player2Material": "262",
+                        "gameManager": "272"
                     }
                 }
             ],
@@ -1865,15 +1864,6 @@
                     }
                 },
                 {
-                    "type": "test",
-                    "test": {
-                        "player1Material": "261",
-                        "player2Material": "262",
-                        "gameManager": "272"
-                    },
-                    "active": true
-                },
-                {
                     "type": "cursor-target"
                 },
                 {
@@ -1887,6 +1877,14 @@
                                 0.1
                             ]
                         }
+                    }
+                },
+                {
+                    "type": "block",
+                    "block": {
+                        "player1Material": "261",
+                        "player2Material": "262",
+                        "gameManager": "272"
                     }
                 }
             ],
@@ -1919,15 +1917,6 @@
                     }
                 },
                 {
-                    "type": "test",
-                    "test": {
-                        "player1Material": "261",
-                        "player2Material": "262",
-                        "gameManager": "272"
-                    },
-                    "active": true
-                },
-                {
                     "type": "cursor-target"
                 },
                 {
@@ -1941,6 +1930,14 @@
                                 0.1
                             ]
                         }
+                    }
+                },
+                {
+                    "type": "block",
+                    "block": {
+                        "player1Material": "261",
+                        "player2Material": "262",
+                        "gameManager": "272"
                     }
                 }
             ],
@@ -1973,15 +1970,6 @@
                     }
                 },
                 {
-                    "type": "test",
-                    "test": {
-                        "player1Material": "261",
-                        "player2Material": "262",
-                        "gameManager": "272"
-                    },
-                    "active": true
-                },
-                {
                     "type": "cursor-target"
                 },
                 {
@@ -1995,6 +1983,14 @@
                                 0.1
                             ]
                         }
+                    }
+                },
+                {
+                    "type": "block",
+                    "block": {
+                        "player1Material": "261",
+                        "player2Material": "262",
+                        "gameManager": "272"
                     }
                 }
             ],
@@ -2027,15 +2023,6 @@
                     }
                 },
                 {
-                    "type": "test",
-                    "test": {
-                        "player1Material": "261",
-                        "player2Material": "262",
-                        "gameManager": "272"
-                    },
-                    "active": true
-                },
-                {
                     "type": "cursor-target"
                 },
                 {
@@ -2049,6 +2036,14 @@
                                 0.1
                             ]
                         }
+                    }
+                },
+                {
+                    "type": "block",
+                    "block": {
+                        "player1Material": "261",
+                        "player2Material": "262",
+                        "gameManager": "272"
                     }
                 }
             ],
@@ -2081,15 +2076,6 @@
                     }
                 },
                 {
-                    "type": "test",
-                    "test": {
-                        "player1Material": "261",
-                        "player2Material": "262",
-                        "gameManager": "272"
-                    },
-                    "active": true
-                },
-                {
                     "type": "cursor-target"
                 },
                 {
@@ -2103,6 +2089,14 @@
                                 0.1
                             ]
                         }
+                    }
+                },
+                {
+                    "type": "block",
+                    "block": {
+                        "player1Material": "261",
+                        "player2Material": "262",
+                        "gameManager": "272"
                     }
                 }
             ],
@@ -2135,15 +2129,6 @@
                     }
                 },
                 {
-                    "type": "test",
-                    "test": {
-                        "player1Material": "261",
-                        "player2Material": "262",
-                        "gameManager": "272"
-                    },
-                    "active": true
-                },
-                {
                     "type": "cursor-target"
                 },
                 {
@@ -2157,6 +2142,14 @@
                                 0.1
                             ]
                         }
+                    }
+                },
+                {
+                    "type": "block",
+                    "block": {
+                        "player1Material": "261",
+                        "player2Material": "262",
+                        "gameManager": "272"
                     }
                 }
             ],
@@ -2189,15 +2182,6 @@
                     }
                 },
                 {
-                    "type": "test",
-                    "test": {
-                        "player1Material": "261",
-                        "player2Material": "262",
-                        "gameManager": "272"
-                    },
-                    "active": true
-                },
-                {
                     "type": "cursor-target"
                 },
                 {
@@ -2211,6 +2195,14 @@
                                 0.1
                             ]
                         }
+                    }
+                },
+                {
+                    "type": "block",
+                    "block": {
+                        "player1Material": "261",
+                        "player2Material": "262",
+                        "gameManager": "272"
                     }
                 }
             ],
@@ -2243,15 +2235,6 @@
                     }
                 },
                 {
-                    "type": "test",
-                    "test": {
-                        "player1Material": "261",
-                        "player2Material": "262",
-                        "gameManager": "272"
-                    },
-                    "active": true
-                },
-                {
                     "type": "cursor-target"
                 },
                 {
@@ -2265,6 +2248,14 @@
                                 0.1
                             ]
                         }
+                    }
+                },
+                {
+                    "type": "block",
+                    "block": {
+                        "player1Material": "261",
+                        "player2Material": "262",
+                        "gameManager": "272"
                     }
                 }
             ],
@@ -2291,8 +2282,8 @@
             "parent": null,
             "components": [
                 {
-                    "type": "testManager",
-                    "testManager": {
+                    "type": "gameManager",
+                    "gameManager": {
                         "block0": "260",
                         "block1": "263",
                         "block2": "264",
@@ -2301,11 +2292,45 @@
                         "block5": "267",
                         "block6": "268",
                         "block7": "269",
-                        "block8": "270"
+                        "block8": "270",
+                        "textManager": "273"
                     }
                 },
                 {
-                    "type": "text"
+                    "type": "text",
+                    "active": false
+                }
+            ],
+            "translation": [
+                0.0,
+                5.5,
+                -5.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                5.0,
+                5.0,
+                1.0
+            ]
+        },
+        "273": {
+            "name": "Text",
+            "components": [
+                {
+                    "type": "text",
+                    "active": true
+                },
+                {
+                    "type": "textManager",
+                    "textManager": {
+                        "gameManager": "272"
+                    },
+                    "active": true
                 }
             ],
             "translation": [
